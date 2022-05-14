@@ -21,3 +21,15 @@ const galleryMarkup = images.reduce(
   ""
 );
 list.insertAdjacentHTML("afterbegin", galleryMarkup);
+
+
+// Варіант №2
+// const list = document.querySelector(".gallery");
+// const createGallery = (array) => {
+//     list.classList.add('gallery')
+//     const imagesTags = ({ url, alt }) =>
+//       `<li><img src='${url}' alt='${alt}' width='450' height = '300'></li>`;
+//     const gallery = images.map(imagesTags).join(" ");
+//     list.insertAdjacentHTML('afterbegin', gallery);
+// }
+// createGallery(images);
